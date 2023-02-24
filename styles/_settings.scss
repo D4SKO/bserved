@@ -1,0 +1,56 @@
+$blue:#00A79D;
+$fonce:#022135;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+$titre:'Bebas Neue', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+$txt:'Roboto', sans-serif;
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+p.gtitre{
+    font-family: $titre;
+    font-size: clamp(25px, 5vw, 55px);
+    color: white;
+    &:after{
+        content: "";
+        width: 80%;
+        position: absolute;
+        height: 3px;
+        background-color: white;
+        bottom: -15px;
+        left: 0;
+    }
+}
+p{
+    color: black;
+    font-family: $txt;
+    font-size: clamp(20px, 2vw, 25px);
+    width: 40%;
+    margin-top: 5vh;
+}
+@mixin centerd() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: auto;
+}
